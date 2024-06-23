@@ -1,7 +1,7 @@
 const styles = {
   wrapper: {
-    height: "260px",
-    width: "260px",
+    height: "240px",
+    width: "240px",
     cursor: "pointer",
     borderRadius: "12px",
     boxSizing: "border-box",
