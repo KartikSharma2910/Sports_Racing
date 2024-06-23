@@ -1,4 +1,10 @@
-import { CarCategory, Cobras, Home } from "components/features";
+import {
+  CarBrands,
+  CarCategory,
+  Cobras,
+  Details,
+  Home,
+} from "components/features";
 
 const routes = [
   {
@@ -12,6 +18,14 @@ const routes = [
   {
     path: "/cobras",
     element: Cobras,
+  },
+  {
+    path: "/car-brands",
+    element: CarBrands,
+  },
+  {
+    path: "/details",
+    element: Details,
   },
 ];
 

@@ -4,7 +4,7 @@ import Banner from "./Banner";
 import Engine from "./Engine";
 import OurPartner from "./OurPartner";
 
-const Cobras = () => {
+const CarBrands = () => {
   return (
     <Fragment>
       <Banner />
@@ -15,4 +15,4 @@ const Cobras = () => {
   );
 };
 
-export default Cobras;
+export default CarBrands;
