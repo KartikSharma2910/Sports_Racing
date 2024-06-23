@@ -1,7 +1,11 @@
+import BrandCard from "./BrandCard";
+import ParticipantCard from "./ParticipantCard";
 import RaceCard from "./RaceCard";
 
 const CardTypeMapping = {
   RaceCard,
+  ParticipantCard,
+  BrandCard,
 };
 
 const defaultCard = "RaceCard";
