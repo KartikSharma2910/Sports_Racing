@@ -1,6 +1,7 @@
 import ActionCard from "./ActionCard";
 import BrandCard from "./BrandCard";
 import CobraCard from "./CobraCard";
+import DriverCard from "./DriverCard";
 import EngineCard from "./EngineCard";
 import ParticipantCard from "./ParticipantCard";
 import RaceCard from "./RaceCard";
@@ -12,6 +13,7 @@ const CardTypeMapping = {
   EngineCard,
   ActionCard,
   CobraCard,
+  DriverCard,
 };
 
 const defaultCard = "RaceCard";

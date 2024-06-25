@@ -3,6 +3,7 @@ import {
   CarCategory,
   Cobras,
   Details,
+  Driver,
   Home,
 } from "components/features";
 
@@ -26,6 +27,10 @@ const routes = [
   {
     path: "/details",
     element: Details,
+  },
+  {
+    path: "/driver",
+    element: Driver,
   },
 ];
 
