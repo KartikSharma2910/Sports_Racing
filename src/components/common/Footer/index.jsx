@@ -7,17 +7,7 @@ import styles from "./styles";
 
 const Footer = () => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "40px",
-        padding: "40px",
-        color: "white",
-        background:
-          "linear-gradient(83.95deg, #FF0000 -76.49%, #990000 71.53%)",
-      }}
-    >
+    <Box sx={styles.wrapper}>
       <Box sx={styles.container}>
         <Box sx={styles.dataSet}>
           <Box sx={styles.heading}>About</Box>
@@ -38,7 +28,15 @@ const Footer = () => {
           <Box sx={styles.description}>Apex Assault (1600cc)</Box>
           <Box sx={styles.description}>Titan's Tempest (2000cc)</Box>
         </Box>
-        <Box sx={styles.dataSet}>
+        <Box
+          sx={{
+            ...styles.dataSet,
+            flexDirection: {
+              xs: "row",
+              sm: "column",
+            },
+          }}
+        >
           <Box sx={styles.heading}>Events</Box>
           <Box sx={styles.heading}>Teams</Box>
           <Box sx={styles.heading}>Cars</Box>
@@ -57,31 +55,9 @@ const Footer = () => {
         </Box>
       </Box>
       <Box sx={styles.container}>
-        <Box
-          sx={{
-            display: "flex",
-          }}
-        >
-          <InputBase
-            placeholder="Your email"
-            sx={{
-              padding: "24px",
-              borderRadius: "24px 0px 0px 24px",
-              borderColor: "white",
-            }}
-          />
-          <Box
-            sx={{
-              padding: "13.5px 22px",
-              fontSize: "14px",
-              cursor: "pointer",
-              color: "#FF0000",
-              borderRadius: "0px 24px 24px 0px",
-              backgroundColor: "white",
-            }}
-          >
-            Subscribe
-          </Box>
+        <Box sx={styles.inputBox}>
+          <InputBase placeholder="Your email" sx={styles.input} />
+          <Box sx={styles.subscribe}>Subscribe</Box>
         </Box>
         <Box sx={styles.iconWrapper}>
           <FacebookOutlinedIcon sx={styles.icon} />

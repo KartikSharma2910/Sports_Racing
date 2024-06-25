@@ -11,13 +11,19 @@ const styles = {
   },
 
   heading: {
-    fontSize: "22px",
+    fontSize: {
+      xs: "18px",
+      sm: "22px",
+    },
     fontWeight: "bold",
     fontStyle: "italic",
   },
 
   linksWrapper: {
-    display: "flex",
+    display: {
+      xs: "none",
+      sm: "flex",
+    },
     position: "relative",
     color: "white",
   },
@@ -25,7 +31,10 @@ const styles = {
   links: {
     textDecoration: "none",
     height: "100%",
-    fontSize: "13px",
+    fontSize: {
+      xs: "11px",
+      md: "13px",
+    },
     borderRight: "1.5px solid rgba(255, 255, 255, 0.34)",
     fontWeight: 300,
     textTransform: "uppercase",
@@ -34,6 +43,10 @@ const styles = {
   },
 
   login: {
+    display: {
+      xs: "none",
+      md: "block",
+    },
     color: "white",
     border: "1.5px solid #999999",
     fontSize: "14px",

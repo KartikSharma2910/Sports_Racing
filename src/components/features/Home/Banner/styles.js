@@ -13,6 +13,10 @@ const styles = {
 
   leftBox: {
     position: "absolute",
+    display: {
+      xs: "none",
+      md: "block",
+    },
     top: 0,
     bottom: 0,
     backgroundColor: "rgb(255,255,255,0.2)",
@@ -22,6 +26,10 @@ const styles = {
 
   rightBox: {
     position: "absolute",
+    display: {
+      xs: "none",
+      md: "block",
+    },
     top: 0,
     bottom: 0,
     right: 0,
@@ -31,21 +39,47 @@ const styles = {
   },
 
   contentWrapper: {
+    width: "100%",
     position: "absolute",
     display: "flex",
     flexDirection: "column",
+    alignItems: {
+      xs: "center",
+      md: "start",
+    },
     gap: "20px",
-    top: "30%",
-    left: "5%",
+    top: {
+      xs: "50%",
+      md: "30%",
+    },
+    left: {
+      xs: "50%",
+      md: "5%",
+    },
+    transform: {
+      xs: "translate(-50%,-50%)",
+      md: "none",
+    },
     "& .red": {
       color: "#FF0000",
     },
   },
 
   heading: {
-    width: "36%",
+    width: {
+      xs: "80%",
+      md: "36%",
+    },
     textTransform: "capitalize",
-    fontSize: "42px",
+    textAlign: {
+      xs: "center",
+      md: "left",
+    },
+    fontSize: {
+      xs: "36px",
+      sm: "38px",
+      md: "42px",
+    },
     color: "white",
     opacity: 0.8,
     fontWeight: "bold",
