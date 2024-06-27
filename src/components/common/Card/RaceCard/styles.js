@@ -9,11 +9,19 @@ const styles = {
   container: {
     display: "flex",
     gap: "20px",
-    padding: "60px",
+    padding: {
+      xs: "30px",
+      sm: "40px",
+      md: "60px",
+    },
   },
 
   number: {
-    fontSize: "56px",
+    fontSize: {
+      xs: "42px",
+      sm: "48px",
+      md: "56px",
+    },
     fontWeight: 600,
     color: "#FF0000",
     fontStyle: "italic",
@@ -21,7 +29,10 @@ const styles = {
 
   divider: {
     width: "14px",
-    height: "80px",
+    height: {
+      xs: "60px",
+      md: "80px",
+    },
     backgroundColor: "black",
     borderRadius: "20px",
   },
@@ -33,12 +44,19 @@ const styles = {
   },
 
   heading: {
-    fontSize: "26px",
+    fontSize: {
+      xs: "22px",
+      sm: "24px",
+      md: "26px",
+    },
     fontWeight: "bold",
   },
 
   description: {
-    fontSize: "14px",
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
     color: "#A6A6A6",
   },
 

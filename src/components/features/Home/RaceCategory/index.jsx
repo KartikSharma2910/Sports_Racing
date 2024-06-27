@@ -20,7 +20,10 @@ const RaceCategory = () => {
             image={image}
             customStyles={{
               ...styles.card,
-              flexDirection: index % 2 === 0 ? "column" : "column-reverse",
+              flexDirection: {
+                xs: "column",
+                md: index % 2 === 0 ? "column" : "column-reverse",
+              },
             }}
           />
         ))}

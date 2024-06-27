@@ -4,7 +4,11 @@ const styles = {
     flexDirection: "column",
     gap: "20px",
     backgroundColor: "#101010",
-    padding: "40px",
+    padding: {
+      xs: "20px",
+      sm: "30px",
+      md: "40px",
+    },
     color: "#8A8A8A",
     "& .red": {
       color: "#FF0000E5",
@@ -19,7 +23,10 @@ const styles = {
   },
 
   description: {
-    fontSize: "14px",
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
     textAlign: "center",
   },
 
@@ -30,6 +37,10 @@ const styles = {
   },
 
   lowerLeftBox: {
+    display: {
+      xs: "none",
+      md: "block",
+    },
     width: "30%",
   },
 
@@ -60,7 +71,10 @@ const styles = {
   },
 
   bottomText: {
-    fontSize: "14px",
+    fontSize: {
+      xs: "12px",
+      sm: "14px",
+    },
     width: "45%",
     textTransform: "capitalize",
     "& .dark": {
@@ -72,7 +86,10 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     rowGap: "30px",
-    width: "70%",
+    width: {
+      xs: "100%",
+      md: "70%",
+    },
   },
 
   miniBoxContainer: {
@@ -83,8 +100,16 @@ const styles = {
   },
 
   rightImageContainer: {
-    width: "150px",
-    height: "150px",
+    width: {
+      xs: "120px",
+      sm: "130px",
+      md: "150px",
+    },
+    height: {
+      xs: "120px",
+      sm: "130px",
+      md: "150px",
+    },
     borderRadius: "100%",
     border: "1px solid red",
   },

@@ -18,7 +18,11 @@ const styles = {
     left: "50%",
     color: "#FF0000E5",
     fontWeight: "bold",
-    fontSize: "32px",
+    fontSize: {
+      xs: "24px",
+      sm: "28px",
+      md: "32px",
+    },
     transform: "translate(-50%,-50%)",
   },
 
@@ -28,7 +32,10 @@ const styles = {
   },
 
   card: {
-    width: "50%",
+    width: {
+      xs: "100%",
+      md: "50%",
+    },
   },
 };
 

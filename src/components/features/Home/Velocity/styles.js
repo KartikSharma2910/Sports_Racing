@@ -1,7 +1,18 @@
 const styles = {
   wrapper: {
-    height: "500px",
+    height: "min-content",
+    padding: {
+      xs: "20px",
+      sm: "30px",
+      md: "40px",
+    },
+    display: "flex",
+    flexDirection: "column",
+    gap: 4,
     position: "relative",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundImage: "url(/velocity.png)",
   },
 
   image: {
@@ -11,15 +22,20 @@ const styles = {
   },
 
   dataContainer: {
-    position: "absolute",
-    top: 50,
+    display: "flex",
+    flexDirection: "column",
+    gap: "12px",
+    justifyContent: "center",
+    alignItems: "center",
     color: "white",
-    left: "50%",
-    transform: "translate(-50%,0)",
   },
 
   heading: {
-    fontSize: "24px",
+    fontSize: {
+      xs: "20px",
+      sm: "22px",
+      md: "24px",
+    },
     fontWeight: 600,
     textAlign: "center",
   },
@@ -30,13 +46,23 @@ const styles = {
   },
 
   cardWrapper: {
-    position: "absolute",
     width: "100%",
+    rowGap: "20px",
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "space-evenly",
-    top: "60%",
-    left: "50%",
-    transform: "translate(-50%,-50%)",
+  },
+
+  cardHeight: {
+    xs: "180px",
+    sm: "200px",
+    md: "240px",
+  },
+
+  cardWidth: {
+    xs: "180px",
+    sm: "200px",
+    md: "240px",
   },
 };
 

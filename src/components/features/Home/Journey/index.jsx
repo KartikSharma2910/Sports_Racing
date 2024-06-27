@@ -31,7 +31,12 @@ const Journey = () => {
           </Box>
         </Box>
         <Box sx={styles.rightBox}>
-          <Box sx={{ ...styles.miniBoxContainer, marginLeft: "120px" }}>
+          <Box
+            sx={{
+              ...styles.miniBoxContainer,
+              marginLeft: { xs: "none", md: "120px" },
+            }}
+          >
             <Box sx={styles.rightImageContainer}>
               <Box component="img" src="/journey1.png" sx={styles.rightImage} />
             </Box>
@@ -56,7 +61,7 @@ const Journey = () => {
           <Box
             sx={{
               ...styles.miniBoxContainer,
-              marginLeft: "-120px",
+              marginLeft: { xs: "none", md: "-120px" },
             }}
           >
             <Box sx={{ ...styles.rightImageContainer, borderColor: "#FEE908" }}>
