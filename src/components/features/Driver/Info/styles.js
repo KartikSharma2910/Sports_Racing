@@ -2,7 +2,7 @@ const styles = {
   wrapper: {
     position: "relative",
     width: "100%",
-    height: "100vh",
+    height: "700px",
     boxSizing: "border-box",
   },
 
@@ -34,9 +34,8 @@ const styles = {
   container: {
     width: "100%",
     position: "absolute",
-    border: "1px solid white",
     display: "flex",
-    gap: 2,
+    gap: 3,
     color: "white",
     justifyContent: "center",
     alignItems: "center",
@@ -62,6 +61,48 @@ const styles = {
     fontSize: "14px",
     opacity: 0.8,
     textAlign: "center",
+  },
+
+  keyBox: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+
+  keysor: {
+    width: "48%",
+    display: "flex",
+    flexDirection: "column",
+    gap: 2,
+  },
+
+  objectBox: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignContent: "center",
+  },
+
+  key: {
+    fontSize: "16px",
+    fontWeight: 500,
+  },
+
+  value: {
+    fontSize: "16px",
+    color: "#797979",
+  },
+
+  bottomBox: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    gap: 2,
+    width: "80%",
+    padding: "10px",
+    borderRadius: "12px",
+    margin: "0 auto",
+    border: "1px solid white",
   },
 };
 
