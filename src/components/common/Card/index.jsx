@@ -5,6 +5,7 @@ import DriverCard from "./DriverCard";
 import EngineCard from "./EngineCard";
 import ParticipantCard from "./ParticipantCard";
 import RaceCard from "./RaceCard";
+import TopDriver from "./TopDriver";
 
 const CardTypeMapping = {
   RaceCard,
@@ -14,6 +15,7 @@ const CardTypeMapping = {
   ActionCard,
   CobraCard,
   DriverCard,
+  TopDriver,
 };
 
 const defaultCard = "RaceCard";
