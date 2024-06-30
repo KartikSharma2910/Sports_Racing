@@ -2,7 +2,7 @@ const styles = {
   wrapper: {
     display: "flex",
     flexDirection: "column",
-    gap: "20px",
+    gap: "80px",
   },
 
   heading: {
@@ -15,6 +15,13 @@ const styles = {
     "& .red": {
       color: "#FF0000",
     },
+  },
+
+  cardWrapper: {
+    display: "flex",
+    flexWrap: "wrap",
+    rowGap: "24px",
+    justifyContent: "space-between",
   },
 };
 

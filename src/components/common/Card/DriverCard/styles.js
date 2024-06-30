@@ -5,10 +5,15 @@ const styles = {
     boxSizing: "border-box",
   },
 
+  imageWrap: {
+    height: "280px",
+    borderRadius: "12px 12px 0px 0px",
+  },
+
   image: {
     width: "100%",
-    height: "280px",
-    borderRadius: "12px",
+    height: "100%",
+    borderRadius: "12px 12px 0px 0px",
     objectFit: "cover",
   },
 

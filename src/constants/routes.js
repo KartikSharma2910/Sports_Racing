@@ -4,6 +4,7 @@ import {
   Cobras,
   Details,
   Driver,
+  DriverBio,
   DriverSelection,
   Home,
 } from "components/features";
@@ -36,6 +37,10 @@ const routes = [
   {
     path: "/driver-selection",
     element: DriverSelection,
+  },
+  {
+    path: "/driver-bio",
+    element: DriverBio,
   },
 ];
 

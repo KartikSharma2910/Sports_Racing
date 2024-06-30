@@ -11,7 +11,9 @@ const DriverCard = ({
 }) => {
   return (
     <Box sx={styles.wrapper}>
-      <Box component="img" src={background} sx={styles.image} />
+      <Box sx={styles.imageWrap}>
+        <Box component="img" src={background} sx={styles.image} />
+      </Box>
       <Box sx={styles.container}>
         <Box sx={styles.flexer}>
           <Box sx={styles.heading}>
