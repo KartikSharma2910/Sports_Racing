@@ -1,4 +1,5 @@
 import {
+  Busted,
   CarBrands,
   CarCategory,
   Cobras,
@@ -7,6 +8,7 @@ import {
   DriverBio,
   DriverSelection,
   Home,
+  TermsAndConditions,
 } from "components/features";
 
 const routes = [
@@ -41,6 +43,14 @@ const routes = [
   {
     path: "/driver-bio",
     element: DriverBio,
+  },
+  {
+    path: "/busted",
+    element: Busted,
+  },
+  {
+    path: "/terms-and-conditions",
+    element: TermsAndConditions,
   },
 ];
 
