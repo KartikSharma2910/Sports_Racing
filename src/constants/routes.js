@@ -3,11 +3,14 @@ import {
   CarBrands,
   CarCategory,
   Cobras,
+  ContactUs,
   Details,
   Driver,
   DriverBio,
   DriverSelection,
+  FAQ,
   Home,
+  PrivacyPolicy,
   TermsAndConditions,
 } from "components/features";
 
@@ -51,6 +54,18 @@ const routes = [
   {
     path: "/terms-and-conditions",
     element: TermsAndConditions,
+  },
+  {
+    path: "/privacy-policy",
+    element: PrivacyPolicy,
+  },
+  {
+    path: "/faq",
+    element: FAQ,
+  },
+  {
+    path: "/contact-us",
+    element: ContactUs,
   },
 ];
 

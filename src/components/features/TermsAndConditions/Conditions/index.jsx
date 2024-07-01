@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import styles from "./styles";
 
 const Conditions = () => {
   const conditions = [
@@ -44,78 +45,21 @@ const Conditions = () => {
     },
   ];
   return (
-    <Box
-      sx={{
-        padding: "40px",
-        color: "white",
-        backgroundColor: "black",
-      }}
-    >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          rowGap: "30px",
-          width: "60%",
-          margin: "0 auto",
-        }}
-      >
-        <Box
-          sx={{
-            fontSize: "28px",
-            fontWeight: 600,
-            color: "#FF0000",
-            textTransform: "capitalize",
-          }}
-        >
-          Terms and Conditions
-        </Box>
-        <Box
-          sx={{
-            fontSize: "14px",
-            textAlign: "center",
-            lineHeight: "28px",
-          }}
-        >
+    <Box sx={styles.wrapper}>
+      <Box sx={styles.container}>
+        <Box sx={styles.heading}>Terms and Conditions</Box>
+        <Box sx={styles.description}>
           Welcome to Velocity Racing! These Terms and Conditions ("Terms")
           govern your use of our website and services provided by Velocity
           Racing. By accessing or using our website, you agree to be bound by
           these Terms. If you disagree with any part of these Terms, please
           refrain from using our website.
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            rowGap: "30px",
-          }}
-        >
+        <Box sx={styles.wraps}>
           {conditions.map(({ label, value }, index) => (
-            <Box
-              key={index}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                rowGap: "20px",
-              }}
-            >
-              <Box
-                sx={{
-                  fontSize: "18px",
-                  fontWeight: 500,
-                }}
-              >
-                {label}
-              </Box>
-              <Box
-                sx={{
-                  fontSize: "14px",
-                  lineHeight: "24px",
-                }}
-              >
-                {value}
-              </Box>
+            <Box key={index} sx={styles.wraps}>
+              <Box sx={styles.label}>{label}</Box>
+              <Box sx={styles.description}>{value}</Box>
             </Box>
           ))}
         </Box>
