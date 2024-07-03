@@ -118,7 +118,9 @@ theme = createTheme(theme, {
           border: "none",
           borderStyle: "solid",
           color: "white",
-          borderColor: "rgba(203, 29, 246, 0.6)",
+          background:
+            "linear-gradient(88.57deg, #101F32 1.22%, #BE201F 119.01%)",
+          borderColor: "transparent",
           fontSize: "12px",
           padding: "10px 12px",
           [theme.breakpoints.down("sm")]: {
@@ -129,7 +131,7 @@ theme = createTheme(theme, {
             borderColor: theme.palette.error.main,
           },
           "&.Mui-focused": {
-            borderColor: "rgba(203, 29, 246, 0.6)",
+            borderColor: "transparent",
           },
           "& input.Mui-disabled": {
             cursor: "not-allowed",

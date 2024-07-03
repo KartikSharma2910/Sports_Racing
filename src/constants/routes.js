@@ -12,6 +12,7 @@ import {
   Home,
   PrivacyPolicy,
   TermsAndConditions,
+  Thankyou,
 } from "components/features";
 
 const routes = [
@@ -66,6 +67,10 @@ const routes = [
   {
     path: "/contact-us",
     element: ContactUs,
+  },
+  {
+    path: "/thankyou",
+    element: Thankyou,
   },
 ];
 
