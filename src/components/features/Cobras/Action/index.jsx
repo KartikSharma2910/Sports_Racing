@@ -6,11 +6,17 @@ const Action = () => {
   const cards = ["/action1.png", "/action2.png", "/action3.jpeg"];
   return (
     <Box sx={styles.wrapper}>
-      {cards.map((item, index) => (
-        <Box sx={styles.card}>
-          <Card key={index} as="ActionCard" image={item} />
-        </Box>
-      ))}
+      <Box sx={styles.headWrapper}>
+        <Box sx={styles.heading}>Best of Action</Box>
+        <Box sx={styles.view}>view more</Box>
+      </Box>
+      <Box sx={styles.cardWrapper}>
+        {cards.map((item, index) => (
+          <Box sx={styles.card}>
+            <Card key={index} as="ActionCard" image={item} />
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };

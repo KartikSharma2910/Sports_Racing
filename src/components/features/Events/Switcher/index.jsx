@@ -1,7 +1,9 @@
 import { Box, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
 import Highlights from "./Highlights";
+import Photos from "./Photos";
 import Schedule from "./Schedule";
+import Standing from "./Standing";
 import styles from "./styles";
 
 function CustomTabPanel(props) {
@@ -48,10 +50,10 @@ const Switcher = () => {
         <Highlights />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Photos
+        <Photos />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        Standing
+        <Standing />
       </CustomTabPanel>
     </Box>
   );
