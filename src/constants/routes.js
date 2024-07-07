@@ -8,6 +8,7 @@ import {
   Driver,
   DriverBio,
   DriverSelection,
+  Events,
   FAQ,
   Home,
   PrivacyPolicy,
@@ -71,6 +72,10 @@ const routes = [
   {
     path: "/thankyou",
     element: Thankyou,
+  },
+  {
+    path: "/events",
+    element: Events,
   },
 ];
 

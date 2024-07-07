@@ -8,6 +8,7 @@ import Driver from "./Driver";
 import DriverBio from "./DriverBio";
 import DriverSelection from "./DriverSelection";
 import Error from "./Error";
+import Events from "./Events";
 import FAQ from "./FAQ";
 import Home from "./Home";
 import PrivacyPolicy from "./PrivacyPolicy";
@@ -25,6 +26,7 @@ export {
   DriverBio,
   DriverSelection,
   Error,
+  Events,
   FAQ,
   Home,
   PrivacyPolicy,
