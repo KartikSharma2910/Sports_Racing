@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import styles from "./styles";
+import { ProgressBar } from "components/common";
 
 const Performance = () => {
   return (
@@ -17,10 +18,7 @@ const Performance = () => {
         </Box>
         <Box sx={styles.box}>
           <Box sx={styles.miniBox}>
-            <Box sx={styles.upperCase}>Adequate Acceleration</Box>
-            <Box>
-              <Box component="img" src="/progress.png" />
-            </Box>
+            <ProgressBar label="Adequate Acceleration" number="80" />
           </Box>
           <Box sx={styles.miniDesc}>
             Highway Cruising: The Camry proved comfortable and stable at highway
@@ -29,10 +27,7 @@ const Performance = () => {
         </Box>
         <Box sx={styles.box}>
           <Box sx={styles.miniBox}>
-            <Box sx={styles.upperCase}>Adequate Acceleration</Box>
-            <Box>
-              <Box component="img" src="/progress.png" />
-            </Box>
+            <ProgressBar label="Highway Cruising" number="70" />
           </Box>
           <Box sx={styles.miniDesc}>
             Highway Cruising: The Camry proved comfortable and stable at highway
@@ -41,26 +36,22 @@ const Performance = () => {
         </Box>
         <Box sx={styles.box}>
           <Box sx={styles.miniBox}>
-            <Box sx={styles.upperCase}>Adequate Acceleration</Box>
-            <Box>
-              <Box component="img" src="/progress.png" />
-            </Box>
+            <ProgressBar label="Quarter-mile Acceleration" number="75" />
           </Box>
           <Box sx={styles.miniDesc}>
-            Highway Cruising: The Camry proved comfortable and stable at highway
-            speeds, offering a smooth and quiet ride for long journeys.
+            Quarter-mile Acceleration: Completed in (15.5 seconds),
+            demonstrating the car's ability to pick up speed from a standstill.
           </Box>
         </Box>
         <Box sx={styles.box}>
           <Box sx={styles.miniBox}>
-            <Box sx={styles.upperCase}>Adequate Acceleration</Box>
-            <Box>
-              <Box component="img" src="/progress.png" />
-            </Box>
+            <ProgressBar label="Top Speed" number="60" />
           </Box>
           <Box sx={styles.miniDesc}>
-            Highway Cruising: The Camry proved comfortable and stable at highway
-            speeds, offering a smooth and quiet ride for long journeys.
+            Mountain Driving: While not a dedicated sports car, the Camry
+            handled mountain roads competently. The power delivery, steering
+            response, or braking performance proved sufficient for navigating
+            winding inclines and declines.
           </Box>
         </Box>
         <Box sx={styles.miniDesc}>

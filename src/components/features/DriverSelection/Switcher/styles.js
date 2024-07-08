@@ -5,12 +5,12 @@ const styles = {
     backgroundColor: "black",
     "& .MuiTab-root": {
       color: "#8C8C8C",
+      width: "16%",
     },
     "& .MuiTabs-flexContainer": {
       width: "100%",
       margin: "0 auto",
-      padding: "8px 0px",
-      justifyContent: "space-evenly",
+      justifyContent: "space-between",
       backgroundColor: "rgb(255,255,255,0.1)",
     },
     "& .MuiTabs-root .Mui-selected": {
@@ -32,12 +32,12 @@ const styles = {
   },
 
   tabHead: {
-    fontSize: "16px",
+    fontSize: "14px",
     fontWeight: 500,
   },
 
   tabDesc: {
-    fontSize: "14px",
+    fontSize: "12px",
     fontWeight: 300,
     opacity: 0.8,
   },

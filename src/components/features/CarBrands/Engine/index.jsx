@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import { Card } from "components/common";
+import { brandCars } from "constants/brandCard";
 import styles from "./styles";
 
 const Engine = () => {
-  const cardsData = Array(9).fill({});
   return (
     <Box sx={styles.wrapper}>
       <Box sx={styles.heading}>
@@ -17,8 +17,8 @@ const Engine = () => {
         ingenuity that drive automotive excellence across the globe.
       </Box>
       <Box sx={styles.cardsWrapper}>
-        {cardsData.map((_, index) => (
-          <Card as="BrandCard" key={index} width="30%" />
+        {brandCars.map((brand, index) => (
+          <Card as="BrandCard" key={index} width="30%" source={brand} />
         ))}
       </Box>
     </Box>

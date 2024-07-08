@@ -5,11 +5,11 @@ const styles = {
     backgroundColor: "black",
     "& .MuiTab-root": {
       color: "#8C8C8C",
+      width: "50%",
     },
     "& .MuiTabs-flexContainer": {
       width: "350px",
       margin: "0 auto",
-      padding: "8px 0px",
       borderRadius: "24px",
       justifyContent: "space-evenly",
       backgroundColor: "rgb(255,255,255,0.1)",

@@ -12,26 +12,31 @@ const Velocity = () => {
       <Box sx={styles.cardWrapper}>
         <Card
           as="BrandCard"
+          source="/brandCard1.png"
           height={styles.cardHeight}
           width={styles.cardWidth}
         />
         <Card
           as="BrandCard"
+          source="/brandCard2.png"
           height={styles.cardHeight}
           width={styles.cardWidth}
         />
         <Card
           as="BrandCard"
+          source="/brandCard3.jpeg"
           height={styles.cardHeight}
           width={styles.cardWidth}
         />
         <Card
           as="BrandCard"
+          source="/brandCard4.png"
           height={styles.cardHeight}
           width={styles.cardWidth}
         />
         <Card
           as="BrandCard"
+          source="/brandCard5.jpeg"
           height={styles.cardHeight}
           width={styles.cardWidth}
         />

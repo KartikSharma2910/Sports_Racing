@@ -3,6 +3,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     padding: "40px 20px",
+    backgroundColor: "black",
     gap: "20px",
   },
 
@@ -26,7 +27,6 @@ const styles = {
   cardWrapper: {
     display: "flex",
     gap: 2,
-    backgroundColor: "black",
     color: "white",
   },
 

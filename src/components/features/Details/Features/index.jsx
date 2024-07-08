@@ -1,6 +1,8 @@
 import { Box, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
+import Encap from "./EncapTest";
 import Performance from "./Performance";
+import TyrePerformance from "./TyrePerformance";
 import styles from "./styles";
 
 function CustomTabPanel(props) {
@@ -44,10 +46,10 @@ const Features = () => {
         <Performance />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <Performance />
+        <Encap />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <Performance />
+        <TyrePerformance />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
         <Performance />

@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
-import { brand, brandCars } from "constants/brandCard";
+import { brand } from "constants/brandCard";
 import styles from "./styles";
 
-const BrandCard = ({ height = "240px", width = "240px" }) => {
+const BrandCard = ({ height = "240px", width = "240px", source }) => {
   const getRandomColor = () => {
     const letters = "0123456789ABCDEF";
     let color = "#";
@@ -19,11 +19,7 @@ const BrandCard = ({ height = "240px", width = "240px" }) => {
 
   return (
     <Box sx={{ ...styles.wrapper, height, width }}>
-      <Box
-        component="img"
-        src={getRandomImage(brandCars)}
-        sx={styles.background}
-      />
+      <Box component="img" src={source} sx={styles.background} />
       <Box sx={styles.overlay} />
       <Box component="img" src={getRandomImage(brand)} sx={styles.brand} />
       <Box sx={{ ...styles.bar, backgroundColor: getRandomColor() }} />
